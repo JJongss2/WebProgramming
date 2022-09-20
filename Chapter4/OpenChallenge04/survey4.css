@@ -1,0 +1,25 @@
+body{
+  background-color: aliceblue;
+}
+p.text{
+  text-indent: 1em;
+    font-size: 1em;
+    font-family: 휴먼편지체;
+}
+form{
+  background-color: pink;
+  text-indent: 1em;
+}
+span{
+  color:blue;
+  font-weight: bold;
+}
+p.footer{
+  background:orange;
+  font-size: small;
+  text-indent:1em;
+  font-family: 휴먼편지체;
+}
+#round{
+  border-radius: 15px;
+}
