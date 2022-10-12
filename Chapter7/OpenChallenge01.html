@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>난수</title>
+  <script>
+    function compare(a,b){return a-b;}
+  </script>
+</head>
+<body>
+<h3>난수 생성</h3>
+<hr>
+<script>
+
+  let x = prompt("갯수를 입력하세요", 0);
+  let n =[];
+  for(let i =0; i<x; i++){
+    let a = Math.random()*100 + 1;
+    n[i] = Math.floor(a);
+  }
+  for (let i = 0; i<n.length; i++){
+    document.write(n[i] + " ");
+  }
+  document.write("<hr>");
+  let big = n[0];
+  for(let i = 1; i<n.length; i++){
+    if (big < n[i])
+      big = n[i];
+  }
+  document.write("제일 큰 수는 ");
+  document.write(big, "<hr>");
+  n.sort(compare);
+  for(let i = 0; i<n.length; i++){
+    document.write(n[i] + " ");
+  }
+
+</script>
+</body>
+</html>
